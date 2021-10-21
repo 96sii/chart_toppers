@@ -1,19 +1,18 @@
 import React from 'react';
 import './song.css';
 
-const Song = ({title, artist, image, url, preview, position}) => {
-console.log(preview)
+const Song = ({title, artist, image, url, preview}) => {
     return (
-        <>
-            <h2 id="position">{position}</h2>
+        
             <a href={url}>
             <li className="song">
                 
-                <img src={image}/>
+                <img src={image} alt="The artist's album cover"/>
                 
                 <div className="details">
                     <h3>{title}</h3>
                     <p>{artist}</p> 
+                    
                 </div>
                 <div className ="audioPreview">
                     <audio controls>
@@ -22,7 +21,7 @@ console.log(preview)
                 </div>    
             </li>
             </a>
-        </>
+            
     );
 }
     
