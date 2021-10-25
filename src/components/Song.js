@@ -1,11 +1,12 @@
 import React from 'react';
 import './song.css';
 
-const Song = ({title, artist, image, url, preview}) => {
+const Song = ({title, artist, image, url, preview, position}) => {
     return (
         
             <a href={url}>
             <li className="song">
+                <p id="position">{position}</p>
                 
                 <img src={image} alt="The artist's album cover"/>
                 
