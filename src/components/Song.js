@@ -4,7 +4,7 @@ import './song.css';
 const Song = ({title, artist, image, url, preview, position}) => {
     return (
         
-            <a href={url}>
+            <a href={url} target="_blank">
             <li className="song">
                 <p id="position">{position}</p>
                 
